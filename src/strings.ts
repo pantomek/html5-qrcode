@@ -9,44 +9,37 @@
  */
 
 /**
- * Strings used in {@class Html5Qrcode}.
- * 
- * TODO(mebjas): Support internalization.
+ * String translated to pl language.
  */
+
+
 export class Html5QrcodeStrings {
 
     public static codeParseError(exception: any): string {
-        return `QR code parse error, error = ${exception}`;
+        return `Błąd parsowania kodu QR, błąd = ${exception}`;
     }
-
     public static errorGettingUserMedia(error: any): string {
-        return `Error getting userMedia, error = ${error}`;
+        return `Błąd podczas uzyskiwania dostępu do kamery, błąd = ${error}`;
     }
-
     public static onlyDeviceSupportedError(): string {
-        return "The device doesn't support navigator.mediaDevices , only "
-        + "supported cameraIdOrConfig in this case is deviceId parameter "
+        return "Urządzenie nie obsługuje navigator.mediaDevices, jedynie "
+        + "obsługiwany parametr cameraIdOrConfig w tym przypadku to parametr deviceId "
         + "(string).";
     }
-
     public static cameraStreamingNotSupported(): string {
-        return "Camera streaming not supported by the browser.";
+        return "Przeglądarka nie obsługuje strumieniowania z kamery.";
     }
-
     public static unableToQuerySupportedDevices(): string {
-        return "Unable to query supported devices, unknown error.";
+        return "Nie można zapytać o obsługiwane urządzenia, nieznany błąd.";
     }
-
     public static insecureContextCameraQueryError(): string {
-        return "Camera access is only supported in secure context like https "
-        + "or localhost.";
+        return "Dostęp do kamery jest obsługiwany tylko w bezpiecznym kontekście, takim jak https "
+        + "lub localhost.";
     }
-
     public static scannerPaused(): string {
-        return "Scanner paused";
+        return "Skaner wstrzymany";
     }
 }
-
 /**
  * Strings used in {@class Html5QrcodeScanner}.
  * 
@@ -55,135 +48,106 @@ export class Html5QrcodeStrings {
 export class Html5QrcodeScannerStrings {
 
     public static scanningStatus(): string {
-        return "Scanning";
+        return "Skanowanie";
     }
-
     public static idleStatus(): string {
-        return "Idle";
+        return "Bezczynny";
     }
-
     public static errorStatus(): string {
-        return "Error";
+        return "Błąd";
     }
-
     public static permissionStatus(): string {
-        return "Permission";
+        return "Uprawnienia";
     }
-
     public static noCameraFoundErrorStatus(): string {
-        return "No Cameras";
+        return "Brak kamer";
     }
-
     public static lastMatch(decodedText: string): string {
-        return `Last Match: ${decodedText}`;
+        return `Ostatnie dopasowanie: ${decodedText}`;
     }
-
     public static codeScannerTitle(): string {
-        return "Code Scanner";
+        return "Skaner kodów";
     }
-
     public static cameraPermissionTitle(): string {
-        return "Request Camera Permissions";
+        return "Prośba o uprawnienia do kamery";
     }
-
     public static cameraPermissionRequesting(): string {
-        return "Requesting camera permissions...";
+        return "Prośba o uprawnienia do kamery...";
     }
-
     public static noCameraFound(): string {
-        return "No camera found";
+        return "Nie znaleziono kamery";
     }
-
     public static scanButtonStopScanningText(): string {
-        return "Stop Scanning";
+        return "Zatrzymaj skanowanie";
     }
-
     public static scanButtonStartScanningText(): string {
-        return "Start Scanning";
+        return "Rozpocznij skanowanie";
     }
-
     public static torchOnButton(): string {
-        return "Switch On Torch";
+        return "Włącz latarkę";
     }
-
     public static torchOffButton(): string {
-        return "Switch Off Torch";
+        return "Wyłącz latarkę";
     }
-
     public static torchOnFailedMessage(): string {
-        return "Failed to turn on torch";
+        return "Nie udało się włączyć latarki";
     }
-
     public static torchOffFailedMessage(): string {
-        return "Failed to turn off torch";
+        return "Nie udało się wyłączyć latarki";
     }
-
     public static scanButtonScanningStarting(): string {
-        return "Launching Camera...";
+        return "Uruchamianie kamery...";
     }
-
     /**
-     * Text to show when camera scan is selected.
+     * Tekst do wyświetlenia, gdy wybrano skanowanie kamery.
      * 
-     * This will be used to switch to file based scanning.
+     * Będzie to używane do przełączenia na skanowanie oparte na plikach.
      */
     public static textIfCameraScanSelected(): string {
-        return "Scan an Image File";
+        return "Skanuj plik obrazu";
     }
-
     /**
-     * Text to show when file based scan is selected.
+     * Tekst do wyświetlenia, gdy wybrano skanowanie oparte na plikach.
      * 
-     * This will be used to switch to camera based scanning.
+     * Będzie to używane do przełączenia na skanowanie oparte na kamerze.
      */
     public static textIfFileScanSelected(): string {
-        return "Scan using camera directly";
+        return "Skanuj bezpośrednio za pomocą kamery";
     }
-
     public static selectCamera(): string {
-        return "Select Camera";
+        return "Wybierz kamerę";
     }
-
     public static fileSelectionChooseImage(): string {
-        return "Choose Image";
+        return "Wybierz obraz";
     }
-
     public static fileSelectionChooseAnother(): string {
-        return "Choose Another";
+        return "Wybierz inny";
     }
-
     public static fileSelectionNoImageSelected(): string {
-        return "No image choosen";
+        return "Nie wybrano obrazu";
     }
-
-    /** Prefix to be given to anonymous cameras. */
+    /** Prefiks dla anonimowych kamer. */
     public static anonymousCameraPrefix(): string {
-        return "Anonymous Camera";
+        return "Anonimowa kamera";
     }
-
     public static dragAndDropMessage(): string {
-        return "Or drop an image to scan";
+        return "Lub upuść obraz, aby go zeskanować";
     }
-
     public static dragAndDropMessageOnlyImages(): string {
-        return "Or drop an image to scan (other files not supported)";
+        return "Lub upuść obraz, aby go zeskanować (inne pliki nie są obsługiwane)";
     }
-
-    /** Value for zoom. */
+    /** Wartość dla zoomu. */
     public static zoom(): string {
-        return "zoom";
+        return "powiększenie";
     }
-
     public static loadingImage(): string {
-        return "Loading image...";
+        return "Wczytywanie obrazu...";
     }
-
     public static cameraScanAltText(): string {
-        return "Camera based scan";
+        return "Skanowanie oparte na kamerze";
     }
-
     public static fileScanAltText(): string {
-        return "Fule based scan";
+        return "Skanowanie oparte na plikach";
     }
 }
 
@@ -191,10 +155,9 @@ export class Html5QrcodeScannerStrings {
 export class LibraryInfoStrings {
 
     public static poweredBy(): string {
-        return "Powered by ";
+        return "Napędzane przez ";
     }
-
     public static reportIssues(): string {
-        return "Report issues";
+        return "Zgłoś problemy";
     }
 }
